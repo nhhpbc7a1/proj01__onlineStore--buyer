@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="header">
+        <div class="header__top">
+            <div class="header__top__left">
+    
+                <div class="header__top__left__item header__top__left__hotline">
+                    <p>Hotline:</p>
+                    <a href="tel:+19006752" id="header__hotline">
+                        19006752
+                    </a>
+                </div>
+                <div class="header__top__left__item header__top__left__address">
+                    <p>Address:</p>
+                    <div id="header__address">
+                        Ladeco Building, 266 Doi Can Street, Hà Nội
+                    </div>
+                </div>
+            </div>
+            <div class="header__top__right">
+                <button class="header__top__right__signin">
+                    <i class="fa-solid fa-user"></i>
+                    Đăng nhập
+                </button>
+                <p>hoặc</p>
+                <button class="header__top__right__signup">
+                    Đăng ký
+                </button>
+            </div>
+        </div>
+        <div class="header__mid">
+            <a href=""><img class="header__mid__logo" src="./assets/logo.webp" alt=""></a>
+
+            <div class="header__mid__policy">
+                <div class="header__mid__policy__freeship">
+                    <img src="./assets/policy1.webp" alt="">
+                    <div class="content">
+                        <a href="">Miễn phí vận chuyển</a>
+                        <p>Bán kính 100 km</p>
+                    </div>
+                </div>
+                <div class="header__mid__policy__support">
+                    <img src="./assets/policy2.webp" alt="">
+                    <div class="content">
+                        <a href="">Hỗ trợ 24/7</a>
+                        <p>
+                            Hotline
+                            <a href="tel:+19006750">19006750</a>
+                        </p>
+                    </div>
+
+                </div>
+                <div class="header__mid__policy__workingtime">
+                    <img src="./assets/policy3.webp" alt="">
+                    <div class="content">
+                        <a href="">Giờ làm việc</a>
+                        <p>T2 - T7 giờ hành chính</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="header__mid__cart">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <p>Giỏ hàng</p>
+                <p id="inCart-cnt">(0)</p>
+            </div>
+
+        </div>
+        <div class="header__sticky">
+            <ul class="header__sticky__left">
+                <li class="header__sticky__left__item">Trang chủ</li>
+                <li class="header__sticky__left__item">Sản phẩm</li>
+                <li class="header__sticky__left__item">Giới thiệu</li>
+                <li class="header__sticky__left__item">Tin tức</li>
+                <li class="header__sticky__left__item">Liên hệ</li>
+                <li class="header__sticky__left__item">Chỉ đường</li>
+            </ul>
+            <div class="header__sticky__searchbox">
+                <input type="text"  placeholder="Tìm sản phẩm" />
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+    </div>
+    <div class="middle">
+        <div class="middle__top">
+            <div class="sidebar">
+                <!-- <p>DANH MỤC</p> -->
+                <ul class="sidebar__list">
+                    <li class="sidebar__item">
+                        <i class="fa-solid fa-circle-right"></i>
+                        <p>Rau sạch</p>
+                    </li>
+                        
+                    <li class="sidebar__item">
+                        <i class="fa-solid fa-circle-right"></i>
+                        <p>Thịt tươi</p>
+                    </li>
+                        
+                    <li class="sidebar__item">
+                        <i class="fa-solid fa-circle-right"></i>
+                        <p>Hải sản tươi</p>
+                    </li>
+                        
+                    <li class="sidebar__item">
+                        <i class="fa-solid fa-circle-right"></i>
+                        <p>Hoa quả tươi</p>
+                    </li>
+                        
+                    <li class="sidebar__item">
+                        <i class="fa-solid fa-circle-right"></i>
+                        <p>Nhập khẩu</p>
+                    </li>
+                        
+                    <li class="sidebar__item">
+                        <i class="fa-solid fa-circle-right"></i>
+                        <p>Cá nhật bản</p>
+                    </li>
+                        
+                    <li class="sidebar__item">
+                        <i class="fa-solid fa-circle-right"></i>
+                        <p>Rau đà lạt</p>
+                    </li>
+                        
+                    <li class="sidebar__item">
+                        <i class="fa-solid fa-circle-right"></i>
+                        <p>Hoa quả nhập</p>
+                    </li>
+                        
+                    <li class="sidebar__item">
+                        <i class="fa-solid fa-circle-right"></i>
+                        <p>Xem thêm</p>
+                    </li>
+                        
+                </ul>
+            </div>
+            <img src="./assets/slider_1.webp" alt="" class="picture">
+        </div>
+        <div class="middle__top--extraPic">
+            <img src="./assets/banner1.webp" alt="" class="picture">
+            <img src="./assets/banner2.webp" alt="" class="picture">
+            <img src="./assets/banner3.webp" alt="" class="picture">
+        </div>
+        <div class="middle__recommend-product">
+            <div class="header">
+                <p>Trái cây mỗi ngày</p>
+                <ul class="option-list">
+                    <li class="option-item option-item--active">
+                        <label>Rau củ</label>
+                    </li>
+                    <li class="option-item ">
+                        <label>Hoa quả</label>
+                    </li>
+                    <li class="option-item ">
+                        <label>Thịt</label>
+                    </li>
+                    <li class="option-item ">
+                        <label>Rau củ</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="product-list">
+                <div class="product-item" >
+                    <div class="discount-tag">
+                        <p>-33%</p>
+                    </div>
+                    <img src="./assets/product1.webp" alt="" class="picture">
+                    <div class="info">
+                        <p>Vải thiều loại to</p>
+                        <div class="price">
+                            <p class="orginal-price">
+                                80.000
+                            </p>
+                            <p class="discount-price">
+                                46.000
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="discount-tag">
+                        <p>-33%</p>
+                    </div>
+                    <img src="./assets/product2.webp" alt="" class="picture">
+                    <div class="info">
+                        <p>Dưa leo Đà Lạt</p>
+                        <div class="price">
+                            <p class="orginal-price">
+                                80.000
+                            </p>
+                            <p class="discount-price">
+                                00.000
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item product-item--discount">
+                    <div class="discount-tag">
+                        <p>-33%</p>
+                    </div>
+                    <img src="./assets/product3.webp" alt="" class="picture">
+                    <div class="info">
+                        <p>Cà chua Đà Lạt</p>
+                        <div class="price">
+                            <p class="orginal-price">
+                                30.000
+                            </p>
+                            <p class="discount-price">
+                                45.000
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="discount-tag">
+                        <p>-33%</p>
+                    </div>
+                    <img src="./assets/product4.webp" alt="" class="picture">
+                    <div class="info">
+                        <p>Hồng đỏ Mỹ</p>
+                        <div class="price">
+                            <p class="orginal-price">
+                                150.000
+                            </p>
+                            <p class="discount-price">
+                                46.000
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer__top">
+            <div class="footer__top__item">
+                <h2>Liên hệ</h2>
+                <div class="footer__top__item__body">
+                    <p>Chúng tôi chuyên cung cấp các sản phẩm thực phẩm sạch an toàn cho sức khỏe con người</p>
+                    <ul class="list__detail">
+                        <li class="list__item">
+                            <i class="fa-solid fa-location-pin"></i>
+                            Ladeco Building, 266 Doi Can Street, Ha Noi
+                        </li>
+                        <li class="list__item">
+                            <i class="fa-solid fa-phone-flip"></i>
+                            1900 6750 <br>
+                            Thứ 2 - Chủ nhật 9:00 - 18:00
+                        </li>
+                        <li class="list__item">
+                            <i class="fa-solid fa-envelope"></i>
+                            support@sapo.vn
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__top__item"></div>
+            <div class="footer__top__item"></div>
+            <div class="footer__top__item"></div>
+        </div>
+
+        <div class="footer__bot">
+
+        </div>
+    </div>
+    <script src="./main.js">
+
+    </script>
+</body>
+</html>
