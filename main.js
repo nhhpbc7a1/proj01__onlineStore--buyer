@@ -5,61 +5,71 @@ const $$ = document.querySelectorAll.bind(document);
 const middle = $('.middle');
 const productItem = $('.product-item');
 
-const products = [
-    {
-        images: [ 
-            './assets/products/product1/picture1.webp',
-            './assets/products/product1/picture2.webp',
-            './assets/products/product1/picture3.webp',
-            './assets/products/product1/picture4.webp',
-        ],
-        name: 'Cà chua Đà Lạt',
-        quantity: 1,
-        price: 45000,
-        discountPercent: 33,
-        describe: 'Giá trị dinh dưỡng:   Nho tươi cung cấp các chất dinh dưỡng, làm giảm mệt nhọc ngay lập tức. Các nghiên cứu cho thấy Nho tươi có chứa vitamin A, C, Calcium và sắt giúp duy trì sức khỏe,...',
-    },
-    {
-        images: [ 
-            './assets/products/product1/picture1.webp',
-            './assets/products/product1/picture2.webp',
-            './assets/products/product1/picture3.webp',
-            './assets/products/product1/picture4.webp',
-        ],
-        name: 'Vải thiều loại to',
-        quantity: 1,
-        price: 30000,
-        discountPercent: 0,
-        describe: 'Giá trị dinh dưỡng:   Nho tươi cung cấp các chất dinh dưỡng, làm giảm mệt nhọc ngay lập tức. Các nghiên cứu cho thấy Nho tươi có chứa vitamin A, C, Calcium và sắt giúp duy trì sức khỏe,...',
-    },
-    {
-        images: [ 
-            './assets/products/product1/picture1.webp',
-            './assets/products/product1/picture2.webp',
-            './assets/products/product1/picture3.webp',
-            './assets/products/product1/picture4.webp',
-        ],
-        name: 'Hồng đỏ Mỹ',
-        quantity: 1,
-        price: 30000,
-        discountPercent: 0,
-        describe: 'Giá trị dinh dưỡng:   Nho tươi cung cấp các chất dinh dưỡng, làm giảm mệt nhọc ngay lập tức. Các nghiên cứu cho thấy Nho tươi có chứa vitamin A, C, Calcium và sắt giúp duy trì sức khỏe,...',
-    },
-    {
-        images: [ 
-            './assets/products/product1/picture1.webp',
-            './assets/products/product1/picture2.webp',
-            './assets/products/product1/picture3.webp',
-            './assets/products/product1/picture4.webp',
-        ],
-        name: 'Dưa leo Đà Lạt',
-        quantity: 1,
-        price: 30000,
-        discountPercent: 0,
-        describe: 'Giá trị dinh dưỡng:   Nho tươi cung cấp các chất dinh dưỡng, làm giảm mệt nhọc ngay lập tức. Các nghiên cứu cho thấy Nho tươi có chứa vitamin A, C, Calcium và sắt giúp duy trì sức khỏe,...',
-    },
+// const products = [
+//     {
+//         images: [ 
+//             './assets/products/product1/picture1.webp',
+//             './assets/products/product1/picture2.webp',
+//             './assets/products/product1/picture3.webp',
+//             './assets/products/product1/picture4.webp',
+//         ],
+//         name: 'Cà chua Đà Lạt',
+//         quantity: 1,
+//         price: 45000,
+//         discountPercent: 33,
+//         describe: 'Giá trị dinh dưỡng:   Nho tươi cung cấp các chất dinh dưỡng, làm giảm mệt nhọc ngay lập tức. Các nghiên cứu cho thấy Nho tươi có chứa vitamin A, C, Calcium và sắt giúp duy trì sức khỏe,...',
+//     },
+//     {
+//         images: [ 
+//             './assets/products/product1/picture1.webp',
+//             './assets/products/product1/picture2.webp',
+//             './assets/products/product1/picture3.webp',
+//             './assets/products/product1/picture4.webp',
+//         ],
+//         name: 'Vải thiều loại to',
+//         quantity: 1,
+//         price: 30000,
+//         discountPercent: 0,
+//         describe: 'Giá trị dinh dưỡng:   Nho tươi cung cấp các chất dinh dưỡng, làm giảm mệt nhọc ngay lập tức. Các nghiên cứu cho thấy Nho tươi có chứa vitamin A, C, Calcium và sắt giúp duy trì sức khỏe,...',
+//     },
+//     {
+//         images: [ 
+//             './assets/products/product1/picture1.webp',
+//             './assets/products/product1/picture2.webp',
+//             './assets/products/product1/picture3.webp',
+//             './assets/products/product1/picture4.webp',
+//         ],
+//         name: 'Hồng đỏ Mỹ',
+//         quantity: 1,
+//         price: 30000,
+//         discountPercent: 0,
+//         describe: 'Giá trị dinh dưỡng:   Nho tươi cung cấp các chất dinh dưỡng, làm giảm mệt nhọc ngay lập tức. Các nghiên cứu cho thấy Nho tươi có chứa vitamin A, C, Calcium và sắt giúp duy trì sức khỏe,...',
+//     },
+//     {
+//         images: [ 
+//             './assets/products/product1/picture1.webp',
+//             './assets/products/product1/picture2.webp',
+//             './assets/products/product1/picture3.webp',
+//             './assets/products/product1/picture4.webp',
+//         ],
+//         name: 'Dưa leo Đà Lạt',
+//         quantity: 1,
+//         price: 30000,
+//         discountPercent: 0,
+//         describe: 'Giá trị dinh dưỡng:   Nho tươi cung cấp các chất dinh dưỡng, làm giảm mệt nhọc ngay lập tức. Các nghiên cứu cho thấy Nho tươi có chứa vitamin A, C, Calcium và sắt giúp duy trì sức khỏe,...',
+//     },
 
-];
+// ];
+
+const products = [];
+var productApi = 'http://localhost:3000/products';
+
+fetch(productApi)
+  .then(response => response.json())
+  .then(data => {
+    products = data;
+    console.log(products);
+  });
 
 var saver = middle.innerHTML;
 
