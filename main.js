@@ -61,15 +61,19 @@ const productItem = $('.product-item');
 
 // ];
 
-const products = [];
+var products = [];
 var productApi = 'http://localhost:3000/products';
 
 fetch(productApi)
-  .then(response => response.json())
-  .then(data => {
-    products = data;
-    console.log(products);
-  });
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(data) {
+        products = data;
+        console.log(products);
+    });
+
+
 
 var saver = middle.innerHTML;
 
@@ -114,7 +118,7 @@ productItem.onclick = function(e) {
                 <div class="price">
                     <span class="price__new">
                         <div class="number">
-                            ${product.discountPercentage > 0 ? (product.discountPercentage * product.price / 100) : product.price}
+                            ${product.discountPercent > 0 ? (product.discountPercent * product.price / 100) : product.price}
                         </div>
                     </span>
                     <span class="price__old" ${product.discountPercent <= 0 ? "style=display:none;" : ""} ">
